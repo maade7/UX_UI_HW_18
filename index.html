@@ -17,17 +17,17 @@
     <!-- Favicons
     ================================================== -->
     <link rel="icon" href="img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/f49d337510.js"
+      crossorigin="anonymous"
+    ></script>
     <!--<link rel="apple-touch-icon" href="Public/img/apple-touch-icon.png">-->
     <!--<link rel="apple-touch-icon" sizes="72x72" href="Public/img/apple-touch-icon-72x72.png">-->
     <!--<link rel="apple-touch-icon" sizes="114x114" href="Public/img/apple-touch-icon-114x114.png">-->
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome/css/font-awesome.css"
-    />
+    <link rel="stylesheet" type="text/css" />
 
     <!-- Stylesheet
     ================================================== -->
@@ -148,7 +148,7 @@
           <div class="col-xs-12 col-md-6">
             <div class="about-text">
               <p id="text">
-                <strong class="blue">Who I am.</strong><br />
+                <strong class="blue">Who I am</strong><br />
                 I'm an art director, animator, developer, and design ninja whose
                 playground is the intersection of art and technology. With over
                 20 years of experience in the design field, I've worked on
@@ -162,7 +162,7 @@
                 innovation, collaboration, lifelong learning, and mentoring
                 others.
                 <br />
-                <br /><strong class="blue">What I do.</strong><br />
+                <br /><strong class="blue">What I do</strong><br />
                 I lead creative departments, projects, and people. I scrutinize
                 everything for both form and function to design, animate, and
                 code work that is beautifully simple and can cut through the
@@ -935,19 +935,19 @@
                 <br />
                 <br />
                 <strong class="bold">TECHNICAL SKILLS</strong><br />
-                <span class="blue">Direct: </span><br />
+                <span class="blue">Direct </span><br />
                 Lead design and programming teams by example, building a culture
                 of innovation and celebrating success; identify, manage, and
                 nurture talent, emphasizing ethics, teamwork, and attention to
                 detail.
                 <br /><br />
-                <span class="blue">Design: </span><br />
+                <span class="blue">Design </span><br />
                 After Effects, Photoshop, Illustrator, Ross Xpression, Chyron
                 <br /><br />
-                <span class="blue">UX / UI: </span><br />
+                <span class="blue">UI / UX </span><br />
                 Adobe XD, Figma, Miro, InVision
                 <br /><br />
-                <span class="blue">Programming: </span><br />
+                <span class="blue">Programming </span><br />
                 HTML5, CSS3, JavaScript, jQuery, Bootstrap, Materialize,
                 Firebase, Node JS, MySQL, MongoDB
                 <br /><br /><br />
@@ -967,66 +967,99 @@
     <!-- Experience Section -->
 
     <!-- Contact Section-->
-    <div id="contact" class="text-center intro">
+    <div id="contact" class="text-center">
       <div class="container">
         <div class="section-title center">
           <h2>Get In Touch</h2>
           <hr class="color" />
-          <h2>
-            <span class="email" href="mailto:martin@martinade.com"
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-5 col-md-offset-2">
+            <!-- Email form -->
+
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required="required"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required="required"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group dispnon">
+                <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <button type="submit" class="btn btn-custom btn-lg">
+                Send Message
+              </button>
+              <br /><br /><br /><br />
+            </form>
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <div class="about-text">
+              <p class="justify">
+                <strong class="bold">CONTACT DETAILS</strong><br /><br />
+                <span class="blue">Email </span><br />
+                <span class="email" href="mailto:martin@martinade.com"
               >martin@martinade.com</span
             >
-          </h2>
-        </div>
-
-        <!-- Email form -->
-
-        <!--    <div class="col-md-8 col-md-offset-2">-->
-        <!--      <form name="sentMessage" id="contactForm"  novalidate>-->
-        <!--        <div class="row">-->
-        <!--          <div class="col-md-6">-->
-        <!--            <div class="form-group">-->
-        <!--              <input type="text" id="name" class="form-control" placeholder="Name" required="required">-->
-        <!--              <p class="help-block text-danger"></p>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--          <div class="col-md-6">-->
-        <!--            <div class="form-group">-->
-        <!--              <input type="email" id="email" class="form-control" placeholder="Email" required="required">-->
-        <!--              <p class="help-block text-danger"></p>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <!--        <div class="form-group dispnon">-->
-        <!--          <input class="" id="subject" name="subject" type="text">-->
-        <!--        </div>-->
-        <!--        <div class="form-group">-->
-        <!--          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>-->
-        <!--          <p class="help-block text-danger"></p>-->
-        <!--        </div>-->
-        <!--        <button type="submit" class="btn btn-default btn-lg">Send Message</button>-->
-        <!--      </form>-->
-
-        <div class="social">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/martin-ade/"
-                ><i class="fa fa-linkedin-square"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/maade7"
-                ><i class="fa fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://vimeo.com/martinade"
-                ><i class="fa fa-vimeo"></i
-              ></a>
-            </li>
-            <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
-            <!--<li><a href="#"><i class="fa fa-behance"></i></a></li>-->
-          </ul>
+                <br /><br />
+                <span class="blue">Cell </span><br />
+                404-272-3616
+                <br /><br />
+              </p>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/martin-ade/"
+                      ><i class="fa fa-linkedin-square"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/maade7"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://vimeo.com/martinade"
+                      ><i class="fa fa-vimeo"></i
+                    ></a>
+                  </li>
+                  <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                  <!--<li><a href="#"><i class="fa fa-behance"></i></a></li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
