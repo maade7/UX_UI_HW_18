@@ -420,6 +420,10 @@ ol.type li a:hover {
   color: #cc0033;
   text-align: left;
 }
+#contact .about-text {
+  margin-left: 10px;
+}
+
 label {
   font-size: 12px;
   font-weight: 400;
@@ -461,8 +465,13 @@ label {
 .form-control:-ms-input-placeholder {
   color: #2c3e50;
 }
-textarea {
+textarea.form-control {
   resize: vertical;
+  height: 130px;
+}
+
+.send{
+	margin: 0;
 }
 
 #contact .social {
