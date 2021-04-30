@@ -267,7 +267,7 @@ header .intro-text {
 }
 p.justify {
   text-align: start;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 /* Portfolio Section */
@@ -410,14 +410,14 @@ ol.type li a:hover {
 }
 /* Contact Section */
 #contact {
-  padding: 80px 0 60px 0;
+  padding: 120px 0 120px 0;
   background: #343b42;
 }
 #contact form {
   /* padding: 30px 0; */
 }
 #contact .text-danger {
-  color: #cc0033;
+  color: rgb(255, 0, 0);
   text-align: left;
 }
 #contact .about-text {
@@ -436,10 +436,12 @@ label {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #222;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* color: #222; */
+    color: white;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+   background-color: #414a52;
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid #414a52;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -447,6 +449,15 @@ label {
   -o-transition: none;
   transition: none;
 }
+
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px #414a52 inset !important
+}
+
 #contact .form-control:focus {
   border-color: #4b8d98;
   outline: 0;
@@ -454,33 +465,35 @@ label {
   box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: rgba(255, 255, 255, 0.8);
 }
 .form-control:-moz-placeholder {
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.8);
 }
 .form-control::-moz-placeholder {
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.8);
 }
 .form-control:-ms-input-placeholder {
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.8);
 }
 textarea.form-control {
   resize: vertical;
-  height: 130px;
+  height: 135px;
 }
+
 
 .send{
 	margin: 0;
 }
 
 #contact .social {
-  margin-top: 0px;
+  margin-top: 0;
   text-align: start !important;
 }
 #contact .social ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 #contact .social i.fa {
   font-size: 30px;
@@ -517,7 +530,6 @@ a:focus,
 .btn:active.focus,
 .btn.active.focus {
   outline: none;
-  outline-offset: none;
 }
 /* Footer Section*/
 #footer {
