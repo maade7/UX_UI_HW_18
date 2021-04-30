@@ -455,7 +455,8 @@ label {
 input:-webkit-autofill
 {
   -webkit-text-fill-color: white !important;
-  -webkit-box-shadow: 0 0 0 30px #414a52 inset !important
+  -webkit-box-shadow: 0 0 0 30px #414a52 inset !important;
+    caret-color: white !important;
 }
 
 #contact .form-control:focus {
